@@ -56,6 +56,12 @@ public class Participant extends AbstractEntity {
 
 
 	public Boolean getChecked() {
+		
+		// Handling null error
+		if(this.checked == null) {
+			return false;
+		}
+		
 		return checked;
 	}
 
